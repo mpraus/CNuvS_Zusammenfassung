@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{article}
+
+%packages
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{csquotes}
+\usepackage[colon, nonamebreak]{natbib}
+\usepackage{times}
+\usepackage{geometry}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{hyperref}
+\hypersetup{
+    % colorlinks=true, %set true if you want colored links
+    linktoc=page, % page for just page numbers, all for all
+   % linktopcage
+    % colorlinks,
+    % citecolor=black,
+    % filecolor=black,
+    % linkcolor=black,
+    % urlcolor=blue
+}
+
+%bibliography
+% \MakeOuterQuote{"}
+% \bibliographystyle{tud}
+
+%style
+\geometry{paper=a4paper, margin=2.5cm}
+\linespread{1.5}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0ex}
+\setcounter{tocdepth}{3}
+
+%titlepage
+\title{CNuvS Zusammenfassung}
+\date{Sommersemester 2020}
+\author{Alexander Praus \\ TU Darmstadt}
+
+\makeindex
+
+\begin{document}
+
+    \maketitle
+
+    \pagebreak
+    
+    \tableofcontents
+
+    \input{tex/1_Quicktour}
+
+    \input{tex/2_Routing}
+
+    \input{tex/3_IP_Networking}
+
+    \input{tex/4_Transport}
+
+    \input{tex/5_Queueing}
+
+    \input{tex/6_Multicast}
+
+    \input{tex/7_Application}
+
+\end{document}
